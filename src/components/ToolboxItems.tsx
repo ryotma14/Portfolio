@@ -30,10 +30,12 @@ export const ToolboxItems = ({
             {items.map((item) => (
               <div
                 key={item.title}
-                className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 outline-white/10 rounded-lg"
+                className="inline-flex items-center gap-2 py-1 px-2"
               >
-                <TechIcon component={item.iconType} />
-                {/* <span>{item.icon}</span> */}
+                <div className="w-12 h-12 object-cover flex items-center justify-center">
+                  {/* <div className="w-12 h-12 object-cover rounded-xl border-2 border-black flex items-center justify-center"> */}
+                  <TechIcon component={item.iconType} />
+                </div>
                 <span className="font-semibold">{item.title}</span>
               </div>
             ))}
