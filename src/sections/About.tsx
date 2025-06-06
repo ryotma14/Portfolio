@@ -96,7 +96,7 @@ export const AboutSection = () => {
           description="Learn more who I am, what I do, and what inspires me."
         />
         <div className="mt-20 flex flex-col gap-8">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
             {/* <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
                 title="My Reads"
@@ -108,7 +108,7 @@ export const AboutSection = () => {
                 <Image src={bookImage} alt="Book cover" />
               </div>
             </Card> */}
-            <Card className="h-[320px] md:col-span-3 lg:col-span-2.5">
+            <Card className="h-[320px] md:col-span-5">
               <CardHeader
                 title="My Toolbox"
                 description="Explore the technologies and tools I use to craft exceptional
