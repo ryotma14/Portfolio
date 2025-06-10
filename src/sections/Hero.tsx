@@ -199,16 +199,6 @@ export const HeroSection = () => {
           accessibility focus.
         </p>
 
-        {/* <div className="mt-6 flex justify-center gap-4 flex-wrap">
-          {toolboxItems.map((item) => (
-            <div
-              key={item.title}
-              className="p-2 rounded-xl border-2 border-black bg-white size-14 flex items-center justify-center"
-            >
-              <Image src={item.iconType} alt={item.title} className="w-8 h-8" />
-            </div>
-          ))}
-        </div> */}
         <div className="mt-6 flex justify-center flex-wrap gap-2">
           {toolboxItems.map(({ title, iconType: IconComponent, bgColor }) => (
             <div
@@ -223,17 +213,39 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-        <button className="inline-flex items-center gap-2 border  border-white/15 px-6 h-12 rounded-xl">
-          {/* <span className="font-semibold">🧠 </span> */}
+      <div className="relative z-10  flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
+        {/* <button className="inline-flex items-center gap-2 border  border-white/15 px-6 h-12 rounded-xl">
           <span className="font-semibold">Download CV</span>
           <ArrowDown className="size-4" />
-        </button>
+        </button> */}
 
-        <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+        <a
+          href="https://drive.google.com/file/d/1mbCC6PpfdBBbQ8kbMfXWBG9mvGgb4cwz/view?usp=drive_link"
+          download
+          target="_blank"
+          className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl"
+        >
+          <span className="font-semibold">Download CV</span>
+          <ArrowDown className="size-4" />
+        </a>
+        {/* 
+        <a href={resumeDownload} className="button" rel="noreferrer" target="_blank">
+                  <i className="fa fa-download"></i>Download Resume
+                </a> */}
+
+        {/* <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
           <span>🧠</span>
           <span className="font-semibold">Let&rsquo;s Connect</span>
-        </button>
+        </button> */}
+
+        <a
+          href="https://www.linkedin.com/in/ryota-masuz/"
+          download
+          target="_blank"
+          className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
+        >
+          <span className="font-semibold">Let&rsquo;s Connect</span>
+        </a>
       </div>
     </div>
   );

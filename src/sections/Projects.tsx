@@ -10,41 +10,59 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Data Zoo",
+    // year: "2025",
+    title: "Corporate Website",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      {
+        title:
+          "- Built using JavaScript, HTML, CSS, and Contentful (CMS), this website serves as Data Zoo’s primary digital presence. ",
+      },
+      {
+        title:
+          "- It enables potential clients to explore the company’s identity verification services, browse blog content managed via Contentful, and submit inquiries through a contact form.",
+      },
+      {
+        title:
+          "- The site plays a key role in driving customer engagement and brand visibility.",
+      },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
-  },
-  {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "https://www.datazoo.com/",
     image: lightSaasLandingPage,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Note Taking App",
+    // year: "2022",
+    title: "Think Board",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      {
+        title:
+          "- Built a full-stack note-taking app using React, Express, Node.js, and MongoDB.",
+      },
+      {
+        title:
+          "- Users can create, update, and delete notes with ease through a responsive UI and RESTful API",
+      },
+      {
+        title:
+          "- Integrated Upstash and Redis for rate limiting to enhance security and performance.",
+      },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://note-taking-app-h1i1.onrender.com/",
+    image: darkSaasLandingPage,
   },
+  // {
+  //   company: "Quantum Dynamics",
+  //   year: "2023",
+  //   title: "AI Startup Landing Page",
+  //   results: [
+  //     { title: "Enhanced user experience by 40%" },
+  //     { title: "Improved site speed by 50%" },
+  //     { title: "Increased mobile traffic by 35%" },
+  //   ],
+  //   link: "https://youtu.be/Z7I5uSRHMHg",
+  //   image: aiStartupLandingPage,
+  // },
 ];
 
 export const ProjectsSection = () => {
@@ -77,8 +95,8 @@ export const ProjectsSection = () => {
                   <div className="lg:pb-16">
                     <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
                       <span>{project.company} </span>
-                      <span>&bull; </span>
-                      <span>{project.year}</span>
+                      {/* <span>&bull; </span> */}
+                      {/* <span>{project.year}</span> */}
                     </div>
                     <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                       {project.title}
@@ -90,12 +108,12 @@ export const ProjectsSection = () => {
                           className="flex gap-2 text-sm md:text-base text-white/50"
                           key={index}
                         >
-                          <CheckCircleIcon className="size-5 md:size-6" />
+                          {/* <CheckCircleIcon className="size-5 md:size-6" /> */}
                           <span>{result.title}</span>
                         </li>
                       ))}
                     </ul>
-                    <a href={project.link}>
+                    <a href={project.link} target="_blank">
                       <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
                         <span>Visit Live Site</span>
                         <ArrowUpRightIcon className="size-4" />
@@ -108,7 +126,7 @@ export const ProjectsSection = () => {
                     <Image
                       src={project.image}
                       alt={project.title}
-                      className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                      className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-xl border-2 border-black"
                     />
                   </div>
                 </div>

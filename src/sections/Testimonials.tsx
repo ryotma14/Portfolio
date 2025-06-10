@@ -10,34 +10,22 @@ import { Fragment } from "react";
 
 const testimonials = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    name: "Harshil Thaker",
+    position: "Business Analyst @ Data Zoo",
+    text: "Rio has a strong grasp of business needs and consistently delivers front-end solutions that align well with project goals. His ability to turn requirements into intuitive, high-quality interfaces makes collaboration efficient and effective.",
     avatar: memojiAvatar1,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    name: "Rui Li",
+    position: "Frontend Developer @ NOW Digital",
+    text: "Working alongside Rio on the front-end has been a great experience. Their attention to detail in both design and code makes everything feel polished and thoughtful. They’re also super easy to communicate with, which makes team work smooth and productive.",
     avatar: memojiAvatar2,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    name: "Alvaro Nieto",
+    position: "Full-Stack Developer @ ChemDye Scientific Illustrations",
+    text: "As a fellow front-end dev, I’ve really enjoyed working with Rio. They write clean, maintainable code and have a great sense for UI/UX. It’s always easy to collaborate and bounce ideas off each other.",
     avatar: memojiAvatar3,
-  },
-  {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
-    avatar: memojiAvatar4,
-  },
-  {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
-    avatar: memojiAvatar5,
   },
 ];
 
@@ -46,10 +34,9 @@ export const TestimonialsSection = () => {
     <div id="testomonials" className="py-16 lg:py-24 sm:scroll-mt-4">
       <div className="container">
         <SectionHeader
-          eyebrow="Happy Clients"
-          title="What Clients Say about Me"
-          description="  Do not just take my word for it. See what my clients have to say about
-        my work."
+          eyebrow="Voices from the Team"
+          title="Colleagues on Working with Me"
+          description="Their words say it best — here’s what fellow devs and team members shared."
         />
 
         <div
